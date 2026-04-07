@@ -1,0 +1,53 @@
+<section id="contato" class="section contact">
+  <video
+    class="contact-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+  >
+    <source src="/assets/video-servicos.mp4" type="video/mp4" />
+  </video>
+  <div class="contact-overlay" aria-hidden="true"></div>
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contato</p>
+      <h2>Fale com a R&amp;R Paletes</h2>
+      <p>Pronto para otimizar sua logística com segurança e eficiência.</p>
+      <p>Atendemos Osasco, Barueri, Carapicuíba, São Roque, Jandira e Itapevi.</p>
+      <address>
+        Rodovia Raposo Tavares, 1037<br />
+        São Roque - SP - Brasil - 18131-220
+      </address>
+    </div>
+    <div class="contact-actions reveal">
+      <form class="contact-form" aria-label="Formulário de contato">
+        <div class="form-row">
+          <div class="field">
+            <label for="contact-name">Nome</label>
+            <input id="contact-name" name="name" type="text" placeholder="Seu nome" required />
+          </div>
+          <div class="field">
+            <label for="contact-email">E-mail</label>
+            <input id="contact-email" name="email" type="email" placeholder="seu@email.com" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="contact-phone">Telefone</label>
+          <input id="contact-phone" name="phone" type="tel" placeholder="(11) 90000-0000" />
+        </div>
+        <div class="field">
+          <label for="contact-message">Mensagem</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="Conte sua necessidade" required></textarea>
+        </div>
+        <button class="btn btn-primary btn-large" type="submit">Enviar mensagem</button>
+        <p class="contact-note">Ou fale direto pelo WhatsApp para respostas rápidas.</p>
+        <a class="btn btn-ghost btn-large" href="https://api.whatsapp.com/send?phone=5511935851457" target="_blank" rel="noopener">
+          Chamar no WhatsApp
+        </a>
+      </form>
+    </div>
+  </div>
+</section>

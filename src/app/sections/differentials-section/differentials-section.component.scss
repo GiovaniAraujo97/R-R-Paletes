@@ -1,0 +1,61 @@
+.section-header .eyebrow {
+  color: var(--primary);
+}
+
+.section-header h2 {
+  font-size: clamp(1.9rem, 2.4vw, 2.5rem);
+  margin-bottom: 1.4rem;
+}
+
+.section-header p {
+  font-size: 1.05rem;
+  color: var(--ink-800);
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  background: #fff;
+  border-radius: 1.3rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.75rem;
+  background: rgba(112, 141, 255, 0.15);
+  color: var(--primary-700);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
