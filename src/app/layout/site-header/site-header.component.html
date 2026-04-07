@@ -1,14 +1,13 @@
-<header class="site-header">
+<header class="site-header" [class.menu-open]="menuOpen">
   <div class="container header-inner">
     <div class="brand">
       <img class="brand-logo" src="/assets/rer-logo-enhanced.png" alt="R&R Paletes" />
     </div>
-    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir menu" />
-    <label class="menu-button" for="menu-toggle" aria-hidden="true">
+    <button class="menu-button" type="button" aria-label="Abrir menu" (click)="toggleMenu($event)">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M3 6h18M3 12h18M3 18h18" />
       </svg>
-    </label>
+    </button>
     <div class="header-actions">
       <nav class="nav">
         <a href="#main-content">Home</a>
@@ -24,12 +23,12 @@
         Solicitar Orçamento
       </a>
     </div>
-    <nav class="mobile-nav" aria-label="Navegacao">
-      <a href="#main-content">Home</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Servicos</a>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#contato">Contato</a>
+    <nav class="mobile-nav" aria-label="Navegacao" (click)="$event.stopPropagation()">
+      <a href="#main-content" (click)="closeMenu()">Home</a>
+      <a href="#sobre" (click)="closeMenu()">Sobre</a>
+      <a href="#servicos" (click)="closeMenu()">Servicos</a>
+      <a href="#diferenciais" (click)="closeMenu()">Diferenciais</a>
+      <a href="#contato" (click)="closeMenu()">Contato</a>
     </nav>
   </div>
 </header>
