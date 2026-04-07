@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 6rem 0 5rem;
+  padding: 3.5rem 0 4.5rem;
   background: #0f1426;
   overflow: hidden;
   z-index: 0;
@@ -51,7 +51,7 @@
   grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
-  min-height: calc(100vh - 96px);
+  min-height: calc(70vh - 96px);
   position: relative;
   z-index: 2;
   text-align: center;
@@ -128,10 +128,20 @@
 
 @media (max-width: 720px) {
   .hero {
-    padding: 5.5rem 0 4.5rem;
+    padding: 3rem 0 3.5rem;
+  }
+
+  .hero-actions {
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-footer {
+    margin-top: 0;
+    padding: 1.5rem 0 2rem;
   }
 
   .hero-metrics {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }

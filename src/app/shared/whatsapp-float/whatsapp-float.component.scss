@@ -15,11 +15,23 @@
 }
 
 .whatsapp-float img {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
 .whatsapp-float:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 720px) {
+  .whatsapp-float {
+    bottom: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .whatsapp-float img {
+    width: 34px;
+    height: 34px;
+  }
 }
